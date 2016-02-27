@@ -1,8 +1,6 @@
-# Open Government
+# DCgov Project Dashboard
 
-Information about open government efforts in DC.
-
-We're currently updating the content that appears on this page. Share thoughts and join the discussion on the [issues page](https://github.com/DCgov/dcgov.github.io/issues).
+A human-friendly view of all DCgov projects with a valid [civic.json file](https://github.com/dcgov/civic.json).
 
 ## Public Domain
 
