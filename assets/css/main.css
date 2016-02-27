@@ -107,17 +107,18 @@ Dashboard
     padding: 20px 30px
 }
 
-.project_title {
+.project-title {
     font-weight: bold;
 }
 
-/*.project_header {
-    font-size: 1.4em;
-    padding: 10px 0 15px 0;
-    overflow: auto;
-    border-bottom: 2px solid black;
+.project-tag {
+    background-color: white;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    display: inline-block;
 }
-*/
+
 @media screen and (min-width: 34.375em) {
 
     .left {
@@ -134,7 +135,7 @@ Dashboard
         padding-left: 2%;
     }
 
-    .project_header {
+    .project-header {
         font-size: 1.4em;
         padding: 10px 0 15px 0;
         overflow: auto;
@@ -143,7 +144,7 @@ Dashboard
 
 }
 
-.project_header {
+.project-header {
     font-size: 1.2em;
     border-bottom: 2px solid black;
     padding: 10px 0 15px 0;
@@ -151,14 +152,14 @@ Dashboard
     border-bottom: 2px solid black;
 }
 
-.project_header .left {
+.project-header .left {
     display: block;
     float: left;
     width: 55%;
     padding-right: 2%;
 }
 
-.project_header .right {
+.project-header .right {
     text-align: right;
     display: block;
     float: left;
@@ -186,9 +187,8 @@ Dashboard
     background-color: #009900;
 }
 
-#dashboard_intro {
-    padding: 0px 30px 20px 30px;
-    /*padding-bottom: 2em;*/
+#dashboard-intro {
+    padding-bottom: 2em;
 }
 
 /*

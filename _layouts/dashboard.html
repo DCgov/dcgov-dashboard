@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="dashboard_intro">
+<div id="dashboard-intro">
 	{{ content }}
 </div>
 
@@ -10,8 +10,8 @@ layout: default
     {% assign projects_sorted = site.data.projects | sort:"name" %}
     {% for item in projects_sorted %}
 	    <div class="project">
-	    	<div class="project_header">
-	        	<div class="left project_title">
+	    	<div class="project-header">
+	        	<div class="left project-title">
 	        		{{ item.name | downcase}}
 	        	</div>
 	        	<div class="right">
@@ -41,7 +41,7 @@ layout: default
 	            "{{item.repository}}">code</a></p>{%endif%}
 	            <p><strong>Keywords</strong></p>
 		        {% for tag in item.tags %}
-		        	<span style="background-color: white; padding: 3px 5px; margin-bottom: 5px; border-radius: 3px; display: inline-block">#{{ tag | downcase }}</span>
+		        	<span class="project-tag">#{{ tag | downcase }}</span>
 		        {% endfor %}
 	        </div>
 	    </div>
