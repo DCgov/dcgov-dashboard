@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div id="dashboard_intro">
+	{{ content }}
+</div>
+
+<div>
+    {% assign projects_sorted = site.data.projects | sort:"name" %}
+    {% for item in projects_sorted %}
+	    <div class="project">
+	    	<div class="project_header">
+	        	<div class="left project_title">
+	        		{{ item.name | downcase}}
+	        	</div>
+	        	<div class="right">
+		        	<span class="status {{ item.status | downcase}}">{{item.status | downcase}}</span>
+	        	</div>
+	        </div>
+	        <div class="left">
+	            <p>{{ item.description }}</p>
+		        {% if item.partners %}
+			        <p>
+			            <strong>Partners</strong>
+			            {% for partner in item.partners %}
+			            <span>
+			            	{{ partner.name }}
+			            	{% if forloop.index < forloop.length %} • {%endif%}
+			            </span>
+			            {%endfor%}
+			        </p>
+		        {% endif %}
+	            <p><strong>Created</strong> {{item.github.timeline.created_at | timeago }}</p>
+	            <p><strong>Last updated</strong> {{item.github.timeline.pushed_at | timeago }}</p>
+ 			</div>
+	        <div class="right">
+	            {% if item.homepage.size > 0 %}<p><i class="fa fa-home"></i> <a href=
+	            "{{item.homepage}}">homepage</a></p>{%endif%}
+ 	            {% if item.repository.size > 0 %}<p><i class="fa fa-code"></i> <a href=
+	            "{{item.repository}}">code</a></p>{%endif%}
+	            <p><strong>Keywords</strong></p>
+		        {% for tag in item.tags %}
+		        	<span style="background-color: white; padding: 3px 5px; margin-bottom: 5px; border-radius: 3px; display: inline-block">#{{ tag | downcase }}</span>
+		        {% endfor %}
+	        </div>
+	    </div>
+    {% endfor %}
+</div>

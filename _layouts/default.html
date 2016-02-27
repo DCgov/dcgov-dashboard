@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include header.html %}
+
+  <body>
+    <div class="container">
+      <div id="site-notice">This site is in alpha. The content contained is not final.</div>
+      <header role="banner">
+        <div class="wrap">
+          <h1 class="site-title"><a class="title-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        </div>
+      </header>
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          {{ content }}
+        </section>
+
+      </div><!-- /.wrap content -->
+
+      {% include glossary.html %}
+
+      {% include footer.html %}
+
+    </div> <!-- /.container -->
+    </body>
+    {% include scripts.html %}
+</html>
