@@ -735,9 +735,10 @@
         ], 
         "type": "Command Line Tool", 
         "tags": [
-            "dcgov", 
             "git", 
-            "cli", 
+            "github", 
+            "command line", 
+            "standard", 
             "documentation", 
             "workflow"
         ], 
@@ -749,7 +750,9 @@
             "email": "open@dc.gov"
         }, 
         "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json", 
-        "geography": [], 
+        "geography": [
+            "Washington, DC"
+        ], 
         "homepage": "", 
         "thumbnail": "", 
         "description": "A command line utility to standardize common actions when working on DCgov projects."
