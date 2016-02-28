@@ -425,7 +425,7 @@
                 "CSS": 90478
             }, 
             "timeline": {
-                "pushed_at": "2016-02-27", 
+                "pushed_at": "2016-02-28", 
                 "created_at": "2016-01-08", 
                 "updated_at": "2016-01-30"
             }, 
@@ -484,10 +484,10 @@
                 12, 
                 12, 
                 12, 
-                0
+                1
             ]
         }, 
-        "name": "dc-madison", 
+        "name": "drafts.dc.gov", 
         "license": "GPL-3.0", 
         "tags": [
             "policy", 
@@ -506,7 +506,7 @@
         ], 
         "type": "Web App", 
         "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json", 
-        "description": "Washington DC's instance of the Madison platform. It powers drafts.dc.gov, a site that lets the public comment on and annotate District policy and legislation."
+        "description": "A site that lets the public comment on and annotate District policy and legislation. Powered by The OpenGov Foundation's Madison platform."
     }, 
     {
         "status": "Beta", 
@@ -722,7 +722,60 @@
             "teams": [
                 "DC Digital Service"
             ], 
-            "activity": []
+            "activity": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                8, 
+                11, 
+                1
+            ]
         }, 
         "name": "dcgov-cli", 
         "repository": "https://github.com/DCgov/dcgov-cli", 
