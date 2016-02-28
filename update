@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+DATE=$( date +"%F" )
+cd ~/dcgov-dashboard
+. env/bin/activate
+git pull
+python scripts/scraper.py
+git add _data/projects.json
+git commit -m "Updating projects list on ${DATE}"
+git push origin gh-pages
+deactivate
