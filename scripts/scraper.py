@@ -68,6 +68,7 @@ def civicjson_metadata(full_name, default_branch, schema):
     try:
         data = response.json()
         data['name'] = data['name'].lower()
+        data['tags'] = sorted(data['tags'], key=lambda s: s.lower())
         validate(data, schema)
         return data
     except:
