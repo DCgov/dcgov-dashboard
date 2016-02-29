@@ -1,6 +1,6 @@
 # DCgov Project Dashboard
 
-A human-friendly view of all DCgov projects with a valid [civic.json file](https://github.com/dcgov/civic.json). Want your DCgov project to show up on this page? Checkout out the tools on [open.dc.gov/civic.json](http://open.dc.gov/civic.json).
+A human-friendly view of all DCgov projects with a valid [civic.json file](https://github.com/dcgov/civic.json). Want your DCgov project to show up on this page? Checkout out the tools on [open.dc.gov/civic.json](http://open.dc.gov/civic.json). 
 
 ## Public Domain
 
